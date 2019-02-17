@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Courgette" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="full-game-area">
+        <div class="container" id="game-header">
+            <div id="banner">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
+
+        <div class="game-rules">
+            <p>The four crystals below are the four types of "soul gems" you have been assigned to collect.
+                Every game starts a new day, and the market values of the gems fluctuate each day. You will
+                be assigned a quota each day; your goal is to collect crystals to match that quota in gold points.
+                You will not know the value of each crystal until you collect it; they are valued 1-12. If you go
+                your quota, the boss will think you cheated, and you will not get paid that day. Good luck!
+            </p>
+        </div>
+        <div class="container" id="win-loss-target">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2 id="wins">Wins: </h2>
+                </div>
+                <div class="col-lg-1">
+                    <span id="winCount"> 0</span>
+                </div>
+                <div class="col-lg-2">
+                    <h2 id="targetScore">Quota: </h2>
+                </div>
+                <div class="col-lg-1">
+                    <span id="crystalQuota"> 0</span>
+                </div>
+                <div class="col-lg-2">
+                    <h2 id="userScore">Score: </h2>
+                </div>
+                <div class="col-lg-1">
+                    <span id="userScore-tally"> 0</span>
+                </div>
+                <div class="col-lg-2">
+                    <h2 id="losses">Losses: </h2>
+                </div>
+                <div class="col-lg-1">
+                    <span id="lossCount"> 0</span>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="gem-images">
+            <div class="row">
+                <div class="col-3">
+                    <button id="black-button"><img src="assets/images/Red_Gem.jpg" alt="Black Soul Gem"></button>
+                </div>
+                <div class="col-3">
+                    <button id="greater-button"><img src="assets/images/Eilat_Stone.jpg" alt="Greater Soul Gem"></button>
+                </div>
+                <div class="col-3">
+                    <button id="grand-button"><img src="assets/images/Emerald.jpg" alt="Grand Soul Gem"></button>
+                </div>
+                <div class="col-3">
+                    <button id="petty-button"><img src="assets/images/Peridot.jpg" alt="Petty Soul Gem"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
