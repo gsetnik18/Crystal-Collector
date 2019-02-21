@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Collector</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Courgette" rel="stylesheet">
 </head>
 
@@ -33,51 +29,25 @@
                 your quota, the boss will think you cheated, and you will not get paid that day. Good luck!
             </p>
         </div>
-        <div class="container" id="win-loss-target">
+        <div class="container" id="game-stuff">
             <div class="row">
-                <div class="col-lg-2">
-                    <h2 id="wins">Wins: </h2>
-                </div>
-                <div class="col-lg-1">
-                    <span id="winCount"> 0</span>
-                </div>
-                <div class="col-lg-2">
-                    <h2 id="targetScore">Quota: </h2>
-                </div>
-                <div class="col-lg-1">
-                    <span id="crystalQuota"> 0</span>
-                </div>
-                <div class="col-lg-2">
-                    <h2 id="userScore">Score: </h2>
-                </div>
-                <div class="col-lg-1">
-                    <span id="userScore-tally"> 0</span>
-                </div>
-                <div class="col-lg-2">
-                    <h2 id="losses">Losses: </h2>
-                </div>
-                <div class="col-lg-1">
-                    <span id="lossCount"> 0</span>
-                </div>
+                <p class="col-2">Daily Quota: </p>
+                <p id="daily-quota">0</p>
+                <p class="col-2">Wins: </p>
+                <p id="wins">0</p>
+                <p class="col-2">Losses: </p>
+                <p id="losses">0</p>
+                <p class="col-2">Your score: </p>
+                <p id="userScore">0</p>
             </div>
         </div>
-        <div class="container" id="gem-images">
-            <div class="row">
-                <div class="col-3">
-                    <button id="black-button"><img src="assets/images/Red_Gem.jpg" alt="Black Soul Gem"></button>
-                </div>
-                <div class="col-3">
-                    <button id="greater-button"><img src="assets/images/Eilat_Stone.jpg" alt="Greater Soul Gem"></button>
-                </div>
-                <div class="col-3">
-                    <button id="grand-button"><img src="assets/images/Emerald.jpg" alt="Grand Soul Gem"></button>
-                </div>
-                <div class="col-3">
-                    <button id="petty-button"><img src="assets/images/Peridot.jpg" alt="Petty Soul Gem"></button>
-                </div>
-            </div>
+
+        <div class="soul-gem-row">
+
         </div>
+
     </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

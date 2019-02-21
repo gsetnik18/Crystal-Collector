@@ -1,12 +1,20 @@
+body {
+    background-image: url("../images/Crystal_Collection.jpg");
+    background-color: #666666
+}
 
 #game-header {
     text-align: center;
     font-family: 'Ceviche One', cursive;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h1 {
     font-size: 3em;
     opacity: 1;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .game-rules {
@@ -14,19 +22,83 @@ h1 {
     width: 60%;
     padding: 3px;
     margin: auto;
-}
-
-p {
-    color: #000000;
+    font-size: 1.25em;
+    color: #ffffff;
     font-family: 'Courgette', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.col-lg-2 {
-    font-family: 'Ceviche One', cursive;
-    font-size: 2em; 
+#game-stuff {
+    text-align: center;
+    margin: auto;
+    padding: 3px;
 }
 
-.col-lg-1 {
+.col-2 {
+    font-family: 'Ceviche One', cursive;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#wins {
     font-family: 'Ceviche One', cursive;
     font-size: 2em; 
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#losses {
+    font-family: 'Ceviche One', cursive;
+    font-size: 2em; 
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#userScore {
+    font-family: 'Ceviche One', cursive;
+    font-size: 2em; 
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#daily-quota {
+    font-family: 'Ceviche One', cursive;
+    font-size: 2em; 
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.soul-gem-row {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#black-soulgem {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-image: url("../images/Black_Gem.jpg");
+}
+
+#grand-soulgem {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-image: url("../images/Grand_Gem.jpg");
+}
+
+#greater-soulgem {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-image: url("../images/Greater_Gem.jpg");
+}
+
+#petty-soulgem {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-image: url("../images/Petty_Gem.jpg");
 }
