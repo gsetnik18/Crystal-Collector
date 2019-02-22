@@ -41,8 +41,6 @@ gameStart = function () {
 
     for (var i = 0; i < 1; i++) {
 
-        console.log("Sup Bitches");
-
         blackGem = $("<div>");
         grandGem = $("<div>");
         greaterGem = $("<div>");
