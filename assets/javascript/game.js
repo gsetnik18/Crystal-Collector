@@ -25,8 +25,6 @@ var userScore = 0;
 var current = 0;
 //game states
 var gameStart = '';
-var reset = '';
-
 
 //Game Start
 
